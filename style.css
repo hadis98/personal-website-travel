@@ -1,0 +1,260 @@
+html {
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Eczar', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 12px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.background {
+    background-color: rgba(223, 223, 223, 0.842);
+    opacity: 0.8;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.journey-image {
+    background: url(images/cameron-barnes-dHaqpvqRBN8-unsplash.jpg) no-repeat fixed center center;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.journey-text {
+    text-align: center;
+    font-size: 2em;
+    padding: 1.5em;
+    border-radius: 5px;
+    /* color: #f1f1f1; */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.article,
+.sidebar-widget {
+    padding: 15px;
+    margin: 15px 0;
+}
+
+aside {
+    background: url(images/patrick-hodskins-zyqvuMrxP0Y-unsplash.jpg) fixed no-repeat center center;
+    background-size: cover;
+}
+
+section>p {
+    padding: 0 10px;
+}
+
+@media (min-width: 800px) {
+    body {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+    header {
+        flex-direction: row;
+    }
+    header li {
+        display: inline-block;
+    }
+    li a {
+        display: inline-block;
+        padding: 3px 20px;
+        margin: 0;
+    }
+    header h1,
+    header nav {
+        flex: 1;
+    }
+    header h1 {
+        text-align: left;
+    }
+    header nav {
+        text-align: right;
+    }
+    .wrapper {
+        flex-direction: row;
+    }
+    main {
+        flex: 3;
+    }
+    aside {
+        flex: 1;
+        margin-left: 15px;
+        background: none;
+    }
+    article>header {
+        justify-content: space-around;
+    }
+    .info {
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-text {
+        flex: 2;
+    }
+    .contact-image {
+        flex: 1;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+i {
+    margin-left: 5px;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+}
+
+td:nth-child(2) {
+    padding-left: 30px;
+}
+
+section>p {
+    text-align: justify;
+}
+
+.contact,
+.info {
+    margin: 15px;
+}
+
+.contact {
+    text-align: center;
+    color: darkgray;
+}
+
+.contact h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: gray;
+}
+
+.contact-background {
+    background: url(images/liam-spradlin-tii4RXhkQR0-unsplash.jpg) center center fixed;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-background h2 {
+    background-color: rgba(169, 169, 169, 0.7);
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* 
+.info {
+    display: flex;
+    flex-direction: row;
+} */
+
+.contact-text {
+    margin-left: 15px;
+    position: relative;
+}
+
+.contact-text input,
+textarea {
+    width: 80%;
+    padding: 12px 8px;
+}
+
+.contact-ways {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+button {
+    padding: 15px 16px;
+    position: absolute;
+    right: 17%;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    color: black;
+    background-color: gray;
+}
+
+footer {
+    background-color: darkgray;
+    text-align: center;
+    padding: 30px 0px;
+    margin-top: 200px;
+}
+
+footer:hover {
+    background-color: black;
+    color: white;
+}
+
+#top {
+    color: gray;
+    background-color: white;
+    padding: 8px 16px;
+}
+
+#top:hover {
+    background-color: gray;
+    color: black;
+}
+
+footer div i {
+    color: white;
+}
+
+footer div {
+    margin: 30px 0px;
+}
+
+footer div a:hover i {
+    color: rgba(117, 113, 113, 0.7);
+}
+
+footer span {
+    color: white;
+    text-decoration: underline;
+}
